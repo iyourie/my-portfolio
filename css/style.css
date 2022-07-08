@@ -220,11 +220,11 @@ main p {
   margin-right: 30px;
   color: white;
   cursor: pointer;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -233,11 +233,6 @@ main p {
 }
 .card .logos img:hover {
   background-color: var(--main-color);
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
 }
 
 /*sharingan style start*/
@@ -473,10 +468,9 @@ main p {
 
 /* work section start */
 .work {
-  height: 100vh;
+  height: 120vh;
   padding-top: 80px;
 }
-
 .work h1 {
   color: white;
   text-transform: capitalize;
@@ -484,8 +478,15 @@ main p {
   justify-content: center;
   font-size: 60px;
 }
-.work img:hover{
-  box-shadow: 4px 4px 10px var(--main-color);
+.work #img {
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  gap: 15px;
+  margin: 20px;
+  margin-top: 50px;
+}
+.work #img img {
+  width: 100%;
 }
 /* work section end */
 
